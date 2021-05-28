@@ -2328,6 +2328,9 @@ class DatabaseHelper extends SQLiteOpenHelper {
             loadBooleanSetting(stmt, Settings.Secure.MOUNT_UMS_NOTIFY_ENABLED,
                     R.bool.def_mount_ums_notify_enabled);
 
+            loadBooleanSetting(stmt, Settings.Secure.VOLUME_PANEL_ON_LEFT,
+                    R.bool.def_volume_panel_on_left);
+
             loadIntegerSetting(stmt, Settings.Secure.LONG_PRESS_TIMEOUT,
                     R.integer.def_long_press_timeout_millis);
 
